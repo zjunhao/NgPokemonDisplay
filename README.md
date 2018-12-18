@@ -6,7 +6,7 @@ To kick off the backend, open "PokemonDataService.sln" under backend folder in v
 
 # Notice 
 
-backend provides data on https://localhost:5001/hyland/pokemons,
+backend provides data on https://localhost:5001/datasrc/pokemons,
 
 frontend launches the project on http://localhost:4200/pokemon,
 
