@@ -1,0 +1,12 @@
+@import '../../../../styles/_colors';
+
+footer{
+    background-color: $color-pokedex-red;
+    color: $color-white;
+    padding: 16px;
+    font-size: 1.05em;
+}
+
+a {
+    color: $color-white;
+}

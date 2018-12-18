@@ -1,0 +1,10 @@
+<button mat-raised-button color="accent" (click)="toggle()">{{isSmallFont ? 'Make Font Larger' : 'Make Font Smaller'}}</button>
+<mat-card>
+    <mat-card-content>
+        <div class="container" [@chgFontSize]="isSmallFont ? 'small' : 'large'">
+            <h2>About Ng-Pokedex</h2>
+            <p>Source code from <i>Github</i></p>
+            <p>Check the source here <a href="https://github.com/coryrylan/ng-pokedex" target="_blank"><i>https://github.com/coryrylan/ng-pokedex</i></a></p>
+        </div>
+    </mat-card-content>
+</mat-card>

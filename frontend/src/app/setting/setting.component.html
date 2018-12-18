@@ -1,0 +1,14 @@
+<mat-card>
+  <mat-card-header>
+    <h3>Theming</h3>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-radio-group [(ngModel)]="theme">
+      <mat-radio-button value="pokemon-app-theme">Regular theme</mat-radio-button>
+      <mat-radio-button value="pokemon-dark-theme">Dark theme</mat-radio-button>
+    </mat-radio-group>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="accent" (click)="changeTheme()">Save</button>
+  </mat-card-actions>
+</mat-card>

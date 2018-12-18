@@ -1,0 +1,28 @@
+<section id="searchbar">
+  <app-form-search (searchItemChange)="onSearchItemChange($event)"></app-form-search>
+</section>
+
+<section id="pokemoncards">
+  <div *ngIf="filteredPokemons" 
+    fxLayout="row wrap"
+    fxLayout.ls-sm="column"
+    fxLayoutGap="18px"
+    fxLayoutAlign="flex-start">
+    <a  *ngFor="let p of filteredPokemons"  (click)="openDialog(p)" class='card-container'
+      fxFlex="0 1 calc(16.6%-18px)"
+      fxFlex.lt-lg="0 1 calc(33.3%-18px)"
+      fxFlex.lt-md="0 1 calc(50%-18px)"
+      fxFlex.lt-sm="0 1 calc(100%-18px)">
+      <mat-card>
+        <div class="image-container">
+          <img mat-card-image id="poke-image" src="./../../assets/images/pokemon/{{p.id}}.png" alt="Photo of {{p.name}}">
+        </div>
+        <mat-card-content>
+          <span id="poke-name">{{p.name | upperFirstCharacter}}</span>
+          <span id="poke-number"># {{p.id}}</span>
+        </mat-card-content>
+        <p></p>
+      </mat-card>
+    </a>
+  </div>
+</section>

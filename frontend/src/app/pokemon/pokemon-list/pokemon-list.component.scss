@@ -1,0 +1,22 @@
+a {
+    cursor: pointer;
+}
+.card-container {
+    margin-bottom: 18px;
+}
+.image-container {
+    display: flex;
+    justify-content: center;   
+}
+#poke-name {
+    float:left;
+    font-family: Georgia, serif;
+    font-size: 1.3em;
+}
+#poke-number {
+    float:right;
+}
+#poke-image {
+    height: 130px;
+    width: 130px;    
+}

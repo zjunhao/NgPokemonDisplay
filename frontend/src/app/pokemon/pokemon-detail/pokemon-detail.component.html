@@ -1,0 +1,17 @@
+<div>
+  <h1 mat-dialog-title>{{pokemon.name | upperFirstCharacter}} #{{pokemon.id}}</h1>
+  <div mat-dialog-content>
+    <div id="dialog-image-container"><img src={{pokemonImgUrl}}></div>
+    <span *ngFor="let type of pokemon.types" class="type-box" [ngClass]="type">{{type}}</span>
+    <p>
+      <strong>Height:</strong> {{pokemon.height / 10}} m
+      <strong>Weight:</strong> {{pokemon.weight / 10}} kg
+    </p>
+    <p>
+      {{pokemon.description}}
+    </p>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button (click)="onCloseClick()">Close</button>
+  </div>
+</div>
